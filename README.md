@@ -11,9 +11,26 @@ Download Win64 binary package compiled with Microsoft Visual C++ 2010.
 
 ## Using ImageTiling
 
-### Synopsis
-
-### Description 
+### Parameters
+* **-i** - input path
+* **-ap** - tiling input files apart
+* **-o** - output path
+* **-z** - max zoom
+* **"-b** - vector clip mask
+* **-minz** - min zoom
+* **-tt** - tile type: png, jpg, jp2, tif
+* **-r** - resampling method
+* **-q** - compression quality
+* **-of** - tile container format:
+* **-co** - creation options specific to output tile container format
+* **-tsrs** - tiling srs. Default value:
+* **-tnt** - tile name templete.
+* **-nd** - nodata value.
+* **-ndt** - nodata value tolerance
+* **-bgc** - background color
+* **-bnd** - raster band list order
+* **-wt** - working threads number. Default: 2
+* **-pseudo_png** - code uint value into png red and green bands
 
 ### Example
 
