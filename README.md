@@ -16,7 +16,7 @@ Download Win64 binary package compiled with Microsoft Visual C++ 2010.
 * **-ap** - flag parameter which turns off mosaic mode - each input file is processed apart. By default: one layer of tiles is generated (mosaic mode)
 * **-o** - output file or folder. Default: output path is generated from input file(s) path
 * **-z** - max zoom (base zoom). Default: max zoom is calculated from input raster file resolution and spatial reference system
-* **"-b** - vector clip mask. Default: is not defined
+* **-b** - vector clip mask. Default: is not defined
 * **-minz** - min zoom. Default: 0 or 1
 * **-tt** - tile type: png, jpg, jp2, tif. Default: jpg
 * **-r** - resampling method tha is used to generate base zoom tiles (pyramid level tiles are generated from previous layer tiles by average resampling). Possible values: near, bilinear, cubic, lanczos. Default: cubic for general cases and near for rasters with index color table
