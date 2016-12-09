@@ -33,8 +33,10 @@
 * **-pseudo_png** - code uint16 value into png red and green bands. Default: isn't defined
 
 ### Examples
-* imagetiling -i image.tif -of mbtiles -o image.mbtiles -tt png
-* imagetiling -i image1.tif -i image2.tif -o image1-2_tiles -tt jpg -z 18 -minz 10
+```
+imagetiling -i image.tif -of mbtiles -o image.mbtiles -tt png
+imagetiling -i image1.tif -i image2.tif -o image1-2_tiles -tt jpg -z 18 -minz 10
+```
 * imagetiling -i images/\*.tif -of mbtiles -o images_tiles -tnt {z}_{x}_{y}.png
 * imagetiling -i image.tif -b clip.shp -nd 0 -of mbtiles -o image.mbtiles -tt png
 
