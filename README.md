@@ -7,7 +7,7 @@
   * [Building from Source](#building-from-source)
   
 ## Download Binary
-Download Win64 binary package compiled with Microsoft Visual C++ 2010.
+[Download win-x64 binary](http://kosmosnimki.ru/downloads/tilingtools-101-win-x64) package compiled with Microsoft Visual C++ 2013.
 
 ## Using ImageTiling
 
