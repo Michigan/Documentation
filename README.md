@@ -34,24 +34,20 @@
 
 ### Examples
 ```
-imagetiling -i image.tif -of mbtiles -o image.mbtiles -tt png
-imagetiling -i image1.tif -i image2.tif -o image1-2_tiles -tt jpg -z 18 -minz 10
+ImageTiling -i image.tif -of mbtiles -o image.mbtiles -tt png
+ImageTiling -i image1.tif -i image2.tif -o image1-2_tiles -tt jpg -z 18 -minz 10
+ImageTiling -i images/\*.tif -of mbtiles -o images_tiles -tnt {z}_{x}_{y}.png
+ImageTiling -i image.tif -b clip.shp -nd 0 -of mbtiles -o image.mbtiles -tt png
 ```
-* imagetiling -i images/\*.tif -of mbtiles -o images_tiles -tnt {z}_{x}_{y}.png
-* imagetiling -i image.tif -b clip.shp -nd 0 -of mbtiles -o image.mbtiles -tt png
-
-  
 
 ## Using CopyTiles
 
 
 
-## Building from Source
-Набор утилит для работы с тайлами.
-Документация на сайте GeoMixer: http://geomixer.ru/index.php/ru/docs/manual/tilingtools.
-
-Инструкция по компиляции:
-- скопировать репозиторий
-- разархивировать gdal210.zip в корень TilingTools в папку gdal210 
-- открыть в VS2010 файл-проекта TilingTools.sln
-- скомпилировать в конфигурации Release-x64 или Debug-x64
+## Building TilingTools from Source
+### Building on Windows
+* download TilingTools repository
+* unzip gdal210.zip archive (after unzip there must be a path: TilinTools-master/gdal210/include)
+* open TilingTools.sln with Visual Studio 2010/2013/2015
+* compile TilingTools (set in Configuration Manager: configuration=**Release**, platform=**x64**)
+* after compilation exe-files are located in /x64/Release path  
