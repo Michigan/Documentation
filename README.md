@@ -43,13 +43,13 @@ ImageTiling -i image.tif -b clip.shp -nd 0 -of mbtiles -o image.mbtiles -tt png
 ## Using CopyTiles
 ### Parameters
 * **-i** - input folder or file
-* **-o** - output folder or file
+* **-o** - output folder or file 
 * **-of** - output tile container type
 * **-b** - vector clip mask: shp,tab,mif,kml,geojson
 * **-tt** - tile type: jpg,png
-* **-z** - min-max zoom
-* **-co** - creation options
-* **-tsrs** - tiling srs
+* **-z** - min-max zoom, specifies zoom range of tiles to copy 
+* **-co** - creation options specific to output tile container format
+* **-tsrs** - tiling spatial reference system. Possible values: 0 (World Mercator, EPSG:3395), 1 (Web Mercator or Spherical Mercatorv, EPSG:3857). Default value: 1 
 * **-i_tnt** - input tile name template
 * **-o_tnt** - output tile name template
 
