@@ -41,13 +41,29 @@ ImageTiling -i image.tif -b clip.shp -nd 0 -of mbtiles -o image.mbtiles -tt png
 ```
 
 ## Using CopyTiles
+### Parameters
+* **-i** - input folder or file
+* **-o** - output folder or file
+* **-of** - output tile container type
+* **-b** - vector clip mask: shp,tab,mif,kml,geojson
+* **-tt** - tile type: jpg,png
+* **-z** - min-max zoom
+* **-co** - creation options
+* **-tsrs** - tiling srs
+* **-i_tnt** - input tile name template
+* **-o_tnt** - output tile name template
 
-
+### Examples
+```
+ copytiles -i tiles -i_tnt standard -tt png -of MBTiles -o tiles.mbtiles -z 10-15
+ copytiles -i tiles -i_tnt {z}/{x}/{y}.png -of MBTiles -o tiles.mbtiles -b zone.shp
+ copytiles -i tiles -i_tnt {z}/{x}/{y}.png -o tiles_new -o_tnt {z}_{x}_{y}.png
+```
 
 ## Building TilingTools from Source
 ### Building on Windows
 * download TilingTools repository
 * unzip gdal210.zip archive (after unzip there must be a path: TilinTools-master/gdal210/include)
 * open TilingTools.sln with Visual Studio 2010/2013/2015
-* compile TilingTools (set in Configuration Manager: configuration=**Release**, platform=**x64**)
+* compile TilingTools (set in Configuration Manager: configuration=**Release, platform=x64**)
 * after compilation exe-files are located in /x64/Release path  
